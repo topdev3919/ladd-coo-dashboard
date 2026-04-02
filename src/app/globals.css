@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F2EDE4;
+  --color-cream-dark: #E8E2D8;
+  --color-sage: #8B9E7A;
+  --color-sage-light: #A8B99A;
+  --color-sage-dark: #6B7E5A;
+  --color-charcoal: #1A1A18;
+  --color-muted: #6B6B68;
+  --color-muted-light: #9B9B98;
+  --color-orange: #C84B2F;
+  --color-border: #D4CEC4;
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-sans: "Jost", "Helvetica Neue", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  ::selection {
+    background-color: var(--color-sage);
+    color: var(--color-cream);
+  }
+
+  .container-pad {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 768px) {
+    .container-pad {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-pad {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+@layer utilities {
+  .overline {
+    font-family: var(--font-sans);
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .section-number {
+    font-family: var(--font-sans);
+    font-size: 0.625rem;
+    letter-spacing: 0.15em;
+    color: var(--color-muted-light);
+  }
+  .text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+}
