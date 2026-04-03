@@ -62,7 +62,7 @@ export function Header() {
               className="w-full h-auto object-cover"
               />
             </div>
-            <span className="font-serif text-sm tracking-wide" style={{ fontWeight: 400 }}>
+            <span className="[font-family:var(--font-eiko-medium)] text-sm tracking-wide text-[16px]">
               Ladd &amp; Co.
             </span>
           </a>
@@ -74,7 +74,7 @@ export function Header() {
                 <button
                   key={link.label}
                   onClick={() => handleNavClick(link.href)}
-                  className="font-sans text-[10px] font-medium tracking-[0.15em] uppercase text-[var(--color-muted)] hover:text-[var(--color-charcoal)] transition-colors duration-200 cursor-pointer bg-transparent border-none pb-0.5 border-b border-transparent hover:border-[var(--color-charcoal)]">
+                  className="text-[13px] [font-family:var(--font-mono-regular)] tracking-[0.15em] uppercase text-[var(--color-muted)] hover:text-[var(--color-charcoal)] transition-colors duration-200 cursor-pointer bg-transparent border-none pb-0.5 border-b border-transparent hover:border-[var(--color-charcoal)]">
                   {link.label}
                 </button>
               ))}
@@ -82,7 +82,7 @@ export function Header() {
 
             <div className="hidden md:flex items-center gap-5 flex-shrink-0">
               <a href="#"
-                className="font-sans text-[10px] font-medium tracking-[0.15em] uppercase text-[var(--color-charcoal)] hover:text-[var(--color-muted)] transition-colors">
+                className="text-[13px] [font-family:var(--font-mono-medium)] tracking-[0.15em] uppercase text-[var(--color-charcoal)] hover:text-[var(--color-muted)] transition-colors">
                 Client Login
               </a>
             </div>
@@ -103,7 +103,7 @@ export function Header() {
           <div className="ml-4 md:ml-10 lg:ml-16 bg-[#b5bc9d] h-full w-full flex items-center relative">
             <div className="absolute top-0 h-full pointer-events-none" style={{ left: "45%", right: 0, background: "linear-gradient(to right, transparent, var(--color-cream))",}} />
 
-            <a href="#contact" className="flex items-center gap-2 px-9 md:px-16 font-sans text-[10px] font-medium tracking-[0.15em] uppercase text-[var(--color-charcoal)] hover:opacity-70 transition-opacity relative z-10" >
+            <a href="#contact" className="flex items-center gap-2 px-9 md:px-16 [font-family:var(--font-eiko-medium)] text-[13px] font-medium tracking-[0.15em] text-[var(--color-charcoal)] hover:opacity-70 transition-opacity relative z-10" >
               Request an Introduction →
             </a>
           </div>

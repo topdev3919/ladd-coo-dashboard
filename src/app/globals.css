@@ -1,6 +1,36 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap');
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Geist Regular";
+  src: url("../assets/fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono Regular";
+  src: url("../assets/fonts/GeistMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono Medium";
+  src: url("../assets/fonts/GeistMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Eiko Medium";
+  src: url("../assets/fonts/PPEiko-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} 
 
 @theme {
   --color-cream: #F2EDE4;
@@ -9,20 +39,22 @@
   --color-sage-light: #A8B99A;
   --color-sage-dark: #6B7E5A;
   --color-charcoal: #1A1A18;
-  --color-muted: #6B6B68;
+  --color-muted: #635A4E;
   --color-muted-light: #9B9B98;
   --color-orange: #C84B2F;
   --color-border: #D4CEC4;
-  --font-serif: "Cormorant Garamond", "Georgia", serif;
-  --font-sans: "Jost", "Helvetica Neue", sans-serif;
+  --font-geist-regular: "Geist Regular", ui-sans-serif, system-ui, sans-serif;
+  --font-mono-regular: "Geist Mono Regular", ui-monospace, monospace;
+  --font-mono-medium: "Geist Mono Medium", ui-monospace, monospace;
+  --font-eiko-medium: "PP Eiko Medium", Georgia, serif;
+  --font-sans: "Geist Regular", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   body {
     background-color: var(--color-cream);
     color: var(--color-charcoal);
-    font-family: var(--font-sans);
-    font-weight: 300;
+    font-family: var(--font-sans); 
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
